@@ -1,0 +1,778 @@
+{
+  "schema_version": 1,
+  "publication_date": "2026-10-12",
+  "evidence_as_of_utc": "2026-10-10T13:31:47.476538+00:00",
+  "scope": "verified business and bounded engineering observations, not production certification",
+  "current": {
+    "cohort": "console-components-20261010",
+    "business": {
+      "successful_cells": 9,
+      "original_attempts": 11,
+      "original_status_counts": {
+        "succeeded": 9,
+        "unknown": 2
+      },
+      "cells": [
+        {
+          "runtime": "aca",
+          "workload": "trading",
+          "status": "succeeded",
+          "provider_posts": 17
+        },
+        {
+          "runtime": "aca",
+          "workload": "rag",
+          "status": "succeeded",
+          "provider_posts": 1
+        },
+        {
+          "runtime": "aca",
+          "workload": "sample",
+          "status": "succeeded",
+          "provider_posts": 3
+        },
+        {
+          "runtime": "aks",
+          "workload": "trading",
+          "status": "succeeded",
+          "provider_posts": 17
+        },
+        {
+          "runtime": "aks",
+          "workload": "rag",
+          "status": "succeeded",
+          "provider_posts": 1
+        },
+        {
+          "runtime": "aks",
+          "workload": "sample",
+          "status": "succeeded",
+          "provider_posts": 3
+        },
+        {
+          "runtime": "foundry",
+          "workload": "trading",
+          "status": "succeeded",
+          "provider_posts": 17
+        },
+        {
+          "runtime": "foundry",
+          "workload": "rag",
+          "status": "succeeded",
+          "provider_posts": 1
+        },
+        {
+          "runtime": "foundry",
+          "workload": "sample",
+          "status": "succeeded",
+          "provider_posts": 3
+        }
+      ]
+    },
+    "framework_sessions": {
+      "successful_cells": 15,
+      "sessions_per_cell": 1,
+      "cells": [
+        {
+          "runtime": "aca",
+          "sample": "S1",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "aca",
+          "sample": "S2",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "aca",
+          "sample": "S3",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "aca",
+          "sample": "S4",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "aca",
+          "sample": "S5",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "aks",
+          "sample": "S1",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "aks",
+          "sample": "S2",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "aks",
+          "sample": "S3",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "aks",
+          "sample": "S4",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "aks",
+          "sample": "S5",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "foundry",
+          "sample": "S1",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "foundry",
+          "sample": "S2",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "foundry",
+          "sample": "S3",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "foundry",
+          "sample": "S4",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        },
+        {
+          "runtime": "foundry",
+          "sample": "S5",
+          "status": "succeeded",
+          "provider_posts": 3,
+          "tool_execution_count": 1,
+          "second_turn_contains_tool_result": true
+        }
+      ]
+    },
+    "components": [
+      {
+        "perspective": "P1",
+        "runtime": "aca",
+        "scope_status": "verified_components",
+        "observations": {
+          "verified_live_framework_cells": 5,
+          "sessions_each": 1
+        }
+      },
+      {
+        "perspective": "P2",
+        "runtime": "aca",
+        "scope_status": "receipt_only",
+        "observations": {}
+      },
+      {
+        "perspective": "P3",
+        "runtime": "aca",
+        "scope_status": "verified_components",
+        "observations": {
+          "checkpoint": [
+            {
+              "checkpoint_enabled": false,
+              "model_operations_total": 27,
+              "external_effect_count": 15,
+              "external_effects_executed_once": true
+            },
+            {
+              "checkpoint_enabled": true,
+              "model_operations_total": 23,
+              "external_effect_count": 15,
+              "external_effects_executed_once": true
+            }
+          ],
+          "team_memory_updates": 10,
+          "stale_cas_rejected": true,
+          "private_session_denied": true,
+          "cross_workspace_denied": true,
+          "client_disconnected_seconds": 10.0,
+          "coordinator_boot_changed": true,
+          "interrupted_task_outcome": "unknown",
+          "automatic_redispatch": false,
+          "request_free_idle_seconds": 1800.015000000014,
+          "quiet_window_native_invocations": 0,
+          "private_state_preserved": true
+        }
+      },
+      {
+        "perspective": "P4",
+        "runtime": "aca",
+        "scope_status": "verified_components",
+        "observations": {
+          "workspace_artifacts": {
+            "alpha": {
+              "numerics": {
+                "samples": 257,
+                "sum_squares": 1414528
+              },
+              "png_size": [
+                512,
+                320
+              ],
+              "independent_png_decode": true,
+              "private_input_scope_bound": true,
+              "credential_free_child": true,
+              "child_exit_confirmed": true,
+              "sibling_local_marker_outcome": "allow"
+            },
+            "beta": {
+              "numerics": {
+                "samples": 257,
+                "sum_squares": 1414528
+              },
+              "png_size": [
+                512,
+                320
+              ],
+              "independent_png_decode": true,
+              "private_input_scope_bound": true,
+              "credential_free_child": true,
+              "child_exit_confirmed": true,
+              "sibling_local_marker_outcome": "allow"
+            }
+          },
+          "hard_sandbox_proven": false,
+          "provider_posts": 0
+        }
+      },
+      {
+        "perspective": "P5",
+        "runtime": "aca",
+        "scope_status": "business_only",
+        "observations": {
+          "verified_live_business_cells": 3,
+          "performance_matrix_repeated": false
+        }
+      },
+      {
+        "perspective": "P6",
+        "runtime": "aca",
+        "scope_status": "verified_components",
+        "observations": {
+          "tls_hostname_verified": true,
+          "api_status": 200,
+          "denied_port_connection_rejected": true,
+          "model_calls": 0
+        }
+      },
+      {
+        "perspective": "P7",
+        "runtime": "aca",
+        "scope_status": "verified_components",
+        "observations": {
+          "all_data_plane_contrasts_verified": true,
+          "model_calls": 0
+        }
+      },
+      {
+        "perspective": "P8",
+        "runtime": "aca",
+        "scope_status": "verified_components",
+        "observations": {
+          "injected_task_outcome": "failed",
+          "error_code": "controlled_tool_timeout",
+          "model_calls": 0,
+          "worker_exit_confirmed": true,
+          "original_t_loaded": true,
+          "submission_surface": "outer_workbench_task_form_not_inner_business_form"
+        }
+      },
+      {
+        "perspective": "P9",
+        "runtime": "aca",
+        "scope_status": "verified_components",
+        "observations": {
+          "acceptance_passed": true,
+          "upgrade_business_tasks": 2,
+          "rollback_business_tasks": 2,
+          "inflight_task_preserved": true,
+          "current_release": "v1",
+          "original_failures_retained": true
+        }
+      },
+      {
+        "perspective": "P10",
+        "runtime": "aca",
+        "scope_status": "verified_components",
+        "observations": {
+          "runtime_workloads": [
+            {
+              "workload": "trading",
+              "attempts": 4,
+              "successes": 3,
+              "failures": 1,
+              "unknowns": 0,
+              "mean_success_model_usage_estimate_usd": "0.514308",
+              "per_success_infrastructure_billed_usd": null,
+              "engineering_hours": null,
+              "total_runtime_tco_verified": false
+            },
+            {
+              "workload": "rag",
+              "attempts": 4,
+              "successes": 4,
+              "failures": 0,
+              "unknowns": 0,
+              "mean_success_model_usage_estimate_usd": "0.003868",
+              "per_success_infrastructure_billed_usd": null,
+              "engineering_hours": null,
+              "total_runtime_tco_verified": false
+            }
+          ],
+          "actual_resource_idle_seconds": 1945.125,
+          "full_tco_verified": false,
+          "engineering_hours": null,
+          "unmeasured_components": [
+            "per_task_infrastructure_bill",
+            "exact_idle_window_bill",
+            "shared_layer_request_allocation",
+            "engineering_hours"
+          ]
+        }
+      },
+      {
+        "perspective": "P1",
+        "runtime": "aks",
+        "scope_status": "verified_components",
+        "observations": {
+          "verified_live_framework_cells": 5,
+          "sessions_each": 1
+        }
+      },
+      {
+        "perspective": "P2",
+        "runtime": "aks",
+        "scope_status": "receipt_only",
+        "observations": {}
+      },
+      {
+        "perspective": "P3",
+        "runtime": "aks",
+        "scope_status": "verified_components",
+        "observations": {
+          "checkpoint": [
+            {
+              "checkpoint_enabled": false,
+              "model_operations_total": 27,
+              "external_effect_count": 15,
+              "external_effects_executed_once": true
+            },
+            {
+              "checkpoint_enabled": true,
+              "model_operations_total": 23,
+              "external_effect_count": 15,
+              "external_effects_executed_once": true
+            }
+          ],
+          "team_memory_updates": 10,
+          "stale_cas_rejected": true,
+          "private_session_denied": true,
+          "cross_workspace_denied": true,
+          "client_disconnected_seconds": 10.0,
+          "coordinator_boot_changed": true,
+          "interrupted_task_outcome": "unknown",
+          "automatic_redispatch": false,
+          "request_free_idle_seconds": 1800.015000000014,
+          "quiet_window_native_invocations": 0,
+          "private_state_preserved": true
+        }
+      },
+      {
+        "perspective": "P4",
+        "runtime": "aks",
+        "scope_status": "verified_components",
+        "observations": {
+          "workspace_artifacts": {
+            "alpha": {
+              "numerics": {
+                "samples": 257,
+                "sum_squares": 1414528
+              },
+              "png_size": [
+                512,
+                320
+              ],
+              "independent_png_decode": true,
+              "private_input_scope_bound": true,
+              "credential_free_child": true,
+              "child_exit_confirmed": true,
+              "sibling_local_marker_outcome": "allow"
+            },
+            "beta": {
+              "numerics": {
+                "samples": 257,
+                "sum_squares": 1414528
+              },
+              "png_size": [
+                512,
+                320
+              ],
+              "independent_png_decode": true,
+              "private_input_scope_bound": true,
+              "credential_free_child": true,
+              "child_exit_confirmed": true,
+              "sibling_local_marker_outcome": "allow"
+            }
+          },
+          "hard_sandbox_proven": false,
+          "provider_posts": 0
+        }
+      },
+      {
+        "perspective": "P5",
+        "runtime": "aks",
+        "scope_status": "business_only",
+        "observations": {
+          "verified_live_business_cells": 3,
+          "performance_matrix_repeated": false
+        }
+      },
+      {
+        "perspective": "P6",
+        "runtime": "aks",
+        "scope_status": "verified_components",
+        "observations": {
+          "tls_hostname_verified": true,
+          "api_status": 200,
+          "denied_port_connection_rejected": true,
+          "model_calls": 0
+        }
+      },
+      {
+        "perspective": "P7",
+        "runtime": "aks",
+        "scope_status": "verified_components",
+        "observations": {
+          "all_data_plane_contrasts_verified": true,
+          "model_calls": 0
+        }
+      },
+      {
+        "perspective": "P8",
+        "runtime": "aks",
+        "scope_status": "verified_components",
+        "observations": {
+          "injected_task_outcome": "failed",
+          "error_code": "controlled_tool_timeout",
+          "model_calls": 0,
+          "worker_exit_confirmed": true,
+          "original_t_loaded": true,
+          "submission_surface": "outer_workbench_task_form_not_inner_business_form"
+        }
+      },
+      {
+        "perspective": "P9",
+        "runtime": "aks",
+        "scope_status": "verified_components",
+        "observations": {
+          "acceptance_passed": true,
+          "upgrade_business_tasks": 2,
+          "rollback_business_tasks": 2,
+          "inflight_task_preserved": true,
+          "current_release": "v1",
+          "original_failures_retained": true
+        }
+      },
+      {
+        "perspective": "P10",
+        "runtime": "aks",
+        "scope_status": "verified_components",
+        "observations": {
+          "runtime_workloads": [
+            {
+              "workload": "trading",
+              "attempts": 6,
+              "successes": 4,
+              "failures": 2,
+              "unknowns": 0,
+              "mean_success_model_usage_estimate_usd": "0.533487",
+              "per_success_infrastructure_billed_usd": null,
+              "engineering_hours": null,
+              "total_runtime_tco_verified": false
+            },
+            {
+              "workload": "rag",
+              "attempts": 3,
+              "successes": 3,
+              "failures": 0,
+              "unknowns": 0,
+              "mean_success_model_usage_estimate_usd": "0.003994666666666666666666666667",
+              "per_success_infrastructure_billed_usd": null,
+              "engineering_hours": null,
+              "total_runtime_tco_verified": false
+            }
+          ],
+          "actual_resource_idle_seconds": 1945.125,
+          "full_tco_verified": false,
+          "engineering_hours": null,
+          "unmeasured_components": [
+            "per_task_infrastructure_bill",
+            "exact_idle_window_bill",
+            "shared_layer_request_allocation",
+            "engineering_hours"
+          ]
+        }
+      },
+      {
+        "perspective": "P1",
+        "runtime": "foundry",
+        "scope_status": "verified_components",
+        "observations": {
+          "verified_live_framework_cells": 5,
+          "sessions_each": 1
+        }
+      },
+      {
+        "perspective": "P2",
+        "runtime": "foundry",
+        "scope_status": "receipt_only",
+        "observations": {}
+      },
+      {
+        "perspective": "P3",
+        "runtime": "foundry",
+        "scope_status": "verified_components",
+        "observations": {
+          "checkpoint": [
+            {
+              "checkpoint_enabled": false,
+              "model_operations_total": 27,
+              "external_effect_count": 15,
+              "external_effects_executed_once": true
+            },
+            {
+              "checkpoint_enabled": true,
+              "model_operations_total": 23,
+              "external_effect_count": 15,
+              "external_effects_executed_once": true
+            }
+          ],
+          "team_memory_updates": 10,
+          "stale_cas_rejected": true,
+          "private_session_denied": true,
+          "cross_workspace_denied": true,
+          "client_disconnected_seconds": 10.0,
+          "coordinator_boot_changed": true,
+          "interrupted_task_outcome": "unknown",
+          "automatic_redispatch": false,
+          "request_free_idle_seconds": 1800.015000000014,
+          "quiet_window_native_invocations": 0,
+          "private_state_preserved": true
+        }
+      },
+      {
+        "perspective": "P4",
+        "runtime": "foundry",
+        "scope_status": "verified_components",
+        "observations": {
+          "workspace_artifacts": {
+            "alpha": {
+              "numerics": {
+                "samples": 257,
+                "sum_squares": 1414528
+              },
+              "png_size": [
+                512,
+                320
+              ],
+              "independent_png_decode": true,
+              "private_input_scope_bound": true,
+              "credential_free_child": true,
+              "child_exit_confirmed": true,
+              "sibling_local_marker_outcome": "allow"
+            },
+            "beta": {
+              "numerics": {
+                "samples": 257,
+                "sum_squares": 1414528
+              },
+              "png_size": [
+                512,
+                320
+              ],
+              "independent_png_decode": true,
+              "private_input_scope_bound": true,
+              "credential_free_child": true,
+              "child_exit_confirmed": true,
+              "sibling_local_marker_outcome": "allow"
+            }
+          },
+          "hard_sandbox_proven": false,
+          "provider_posts": 0
+        }
+      },
+      {
+        "perspective": "P5",
+        "runtime": "foundry",
+        "scope_status": "business_only",
+        "observations": {
+          "verified_live_business_cells": 3,
+          "performance_matrix_repeated": false
+        }
+      },
+      {
+        "perspective": "P6",
+        "runtime": "foundry",
+        "scope_status": "verified_components",
+        "observations": {
+          "tls_hostname_verified": true,
+          "api_status": 200,
+          "denied_port_connection_rejected": true,
+          "model_calls": 0
+        }
+      },
+      {
+        "perspective": "P7",
+        "runtime": "foundry",
+        "scope_status": "verified_components",
+        "observations": {
+          "all_data_plane_contrasts_verified": true,
+          "model_calls": 0
+        }
+      },
+      {
+        "perspective": "P8",
+        "runtime": "foundry",
+        "scope_status": "verified_components",
+        "observations": {
+          "injected_task_outcome": "failed",
+          "error_code": "controlled_tool_timeout",
+          "model_calls": 0,
+          "worker_exit_confirmed": true,
+          "original_t_loaded": true,
+          "submission_surface": "outer_workbench_task_form_not_inner_business_form"
+        }
+      },
+      {
+        "perspective": "P9",
+        "runtime": "foundry",
+        "scope_status": "verified_components",
+        "observations": {
+          "acceptance_passed": true,
+          "upgrade_business_tasks": 2,
+          "rollback_business_tasks": 2,
+          "inflight_task_preserved": true,
+          "current_release": "v1",
+          "original_failures_retained": true
+        }
+      },
+      {
+        "perspective": "P10",
+        "runtime": "foundry",
+        "scope_status": "verified_components",
+        "observations": {
+          "runtime_workloads": [
+            {
+              "workload": "trading",
+              "attempts": 4,
+              "successes": 4,
+              "failures": 0,
+              "unknowns": 0,
+              "mean_success_model_usage_estimate_usd": "0.560785",
+              "per_success_infrastructure_billed_usd": null,
+              "engineering_hours": null,
+              "total_runtime_tco_verified": false
+            },
+            {
+              "workload": "rag",
+              "attempts": 3,
+              "successes": 3,
+              "failures": 0,
+              "unknowns": 0,
+              "mean_success_model_usage_estimate_usd": "0.003981333333333333333333333333",
+              "per_success_infrastructure_billed_usd": null,
+              "engineering_hours": null,
+              "total_runtime_tco_verified": false
+            }
+          ],
+          "actual_resource_idle_seconds": 1945.125,
+          "full_tco_verified": false,
+          "engineering_hours": null,
+          "unmeasured_components": [
+            "per_task_infrastructure_bill",
+            "exact_idle_window_bill",
+            "shared_layer_request_allocation",
+            "engineering_hours"
+          ]
+        }
+      }
+    ]
+  },
+  "historical": {
+    "framework_sessions": {
+      "required_cells": 15,
+      "successful_real_cells": 14,
+      "retained_provider_rejection_status": 429
+    },
+    "replay": {
+      "required": 279,
+      "observed": 279,
+      "passed": 253,
+      "failed": 22,
+      "unknown": 4
+    },
+    "model_business": {
+      "attempts": 18,
+      "succeeded": 16,
+      "failed": 2,
+      "trading_market_input": "fixed"
+    }
+  },
+  "interpretation": {
+    "cross_cohort_aggregation": false,
+    "performance_ranking": null,
+    "full_runtime_tco": null,
+    "production_sla": null,
+    "application_isolation_is_not_platform_security_certification": true,
+    "checkpoint_model_operations_are_deterministic_not_paid_provider_calls": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "publication_date": "2026-10-12",
+  "evidence_as_of_utc": "2026-10-10T13:31:47.476538+00:00",
+  "projection": "selected aggregate fields; no source files or Git history copied",
+  "sources": [
+    {
+      "filename": "console-components-20261010.json",
+      "sha256": "79f3dedfdf427942cce6f644fc402174c389c2af6b5d0b7634cccfdddf4db23b"
+    },
+    {
+      "filename": "p1-matrix.json",
+      "sha256": "23d9e13931c9b9242318d50da4a975b3883dd1e0732a4074cff69ccb2e8fcb19"
+    },
+    {
+      "filename": "phase4-replay-summary.json",
+      "sha256": "d68d4c9cdf82004b1286b5a76e3cb695180f62324cf0ea102f48e22e4dcfcab5"
+    },
+    {
+      "filename": "phase4-real-observations.json",
+      "sha256": "beb3f5ab98960307b985fc3c4c4df714baf910bc4080558da91bfad5a4324bda"
+    }
+  ],
+  "raw_evidence_public": false,
+  "new_cloud_operations": 0,
+  "official_reference_checked_date": "2026-10-12",
+  "official_references": [
+    "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks",
+    "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+    "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/hosted-agents"
+  ]
+}
