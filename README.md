@@ -1,7 +1,5 @@
 # Agent 运行架构对比：Foundry Hosted Agents、ACA 与 AKS
 
-**面向 Azure 云架构师与互联网工程团队的研究报告。**
-
 本研究将相同 Agent 业务分别运行在 Microsoft Foundry Hosted Agents、Azure Container Apps（ACA）和 Azure Kubernetes Service（AKS），比较业务接入、执行与恢复、网络与身份、发布和成本核算，帮助工程团队选择合适的运行架构。
 
 **核心结论：三种运行方式都能承载本研究的业务；选型的主要差异是运行治理与团队责任，而不是所选 Agent 框架能否接入。**
