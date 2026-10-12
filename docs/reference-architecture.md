@@ -59,3 +59,17 @@ flowchart LR
 运行记录至少关联任务、runtime、原生 job/session、镜像或版本、工具事件和安全错误码。本研究的受控超时已完成这条关联链；不把诊断探针成功理解为注入业务成功。
 
 Foundry 平台能力、协议选择和应用责任的解释参考[官方 Hosted Agents 文档](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/hosted-agents)。本研究通过统一适配控制比较边界，并不要求所有新项目都采用同一个协议。
+
+## 6. 系统组合与选型对象
+
+模型调用位置、Agent 业务执行位置和用户入口是不同选择。使用 Foundry 模型，不要求将全部应用组件部署到 Hosted Agents；采用 Hosted Agents，也不要求网关和外部检索使用相同承载方式。
+
+| 组件 | 主要选型问题 |
+|---|---|
+| 用户入口与 BFF | 认证、输入契约、接收任务、状态与结果访问 |
+| Agent 编排代码 | 采用模型调用、工具循环还是多 Agent 协作；如何保存步骤与副作用 |
+| 实际执行承载 | 是否需要 Agent 生命周期、普通容器、Kubernetes API 或 OS 控制 |
+| 模型、检索与工具 | 数据与模型访问、私网、授权、延迟和独立故障边界 |
+| 持久状态与运维 | 状态权限、保留、版本、关联链与分层费用 |
+
+选择 runtime 时针对实际执行组件；选择完整方案时考虑组件组合。容器、Job 或 session 只是一部分机制，不等于已经实现完整业务运行契约。技术筛选路径见[架构选型建议](architecture-decision.md)，需求画像见[场景与服务组合](use-cases.md)。
